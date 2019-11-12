@@ -12,6 +12,21 @@ namespace FooBarBaz
             // 1) When the number multiplied by 5, the output will change like so "5. Foo".
             // 2) When the number multiplied by 20, the output will change like so "40. Bar".
             // 3) When the number multiplied by 100, the output will change like so "300. Baz".
+            int i;
+            for (i=1 ; i<=1000 ; i++)
+            {
+                if (i%100==0){
+                    Console.WriteLine(i+"."+" "+"Baz");
+                }
+                else if (i%20==0){
+                    Console.WriteLine(i+"."+" "+"Bar");
+                }
+                else if(i%5==0){
+                    Console.WriteLine(i+"."+" "+"Foo");
+                }
+                else
+                    Console.WriteLine(i+".");
+            }
         }
     }
 }
