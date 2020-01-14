@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Timezone
+namespace Challange
 {
-    class Program
+    public class Timezone
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var jakarta = Tuple.Create("Jakarta", 7);
             var bali = Tuple.Create("Bali", 8);
@@ -25,7 +25,7 @@ namespace Timezone
             
         }
 
-        static string TimezoneDiff(Tuple<string, int> a, Tuple<string, int> b)
+        public static string TimezoneDiff(Tuple<string, int> a, Tuple<string, int> b)
         {
             // Put your solution at here
             if (a.Item2>=b.Item2){

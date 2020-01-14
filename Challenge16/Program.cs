@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace FruitFinder
+namespace Challange
 {
-    class Program
+    public class FruitFinder
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string[] fruits = {
                 "Jeruk",
@@ -26,7 +26,7 @@ namespace FruitFinder
             Console.WriteLine(IndexFinder(fruits, "Markisa"));
         }
 
-        static int IndexFinder(string[] list, string value)
+        public static int IndexFinder(string[] list, string value)
         {
             int index = Array.IndexOf(list,value);
             return index;

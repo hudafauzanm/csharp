@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace FindMinMaxAvg
+namespace Challange
 {
-    class Program
+    public class FindMinMaxAvg
     {
         static void Main(string[] args)
         {
@@ -17,7 +17,7 @@ namespace FindMinMaxAvg
             Console.WriteLine(FindAverage(numbers));
         }
 
-        static int FindMax(int[] numbers)
+        public static int FindMax(int[] numbers)
         {
             int mx = numbers[0];
             int i ;
@@ -32,7 +32,7 @@ namespace FindMinMaxAvg
             return mx;
         }
 
-        static int FindMin(int[] numbers)
+        public static int FindMin(int[] numbers)
         {
             int mn = numbers[0];
             int i ;
@@ -47,14 +47,14 @@ namespace FindMinMaxAvg
             return mn;
         }
 
-        static decimal FindAverage(int[] numbers)
+        public static double FindAverage(int[] numbers)
         {
         int result = 0;
             for(int i = 0; i < numbers.Length; i++)
             {
                 result += numbers[i];
             }
-            decimal results = (decimal)result / numbers.Length;
+            double results = (double)result / numbers.Length;
             return results;
             
         }

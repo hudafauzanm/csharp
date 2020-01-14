@@ -1,43 +1,45 @@
 ﻿using System;
 
-namespace EvenOdd
+namespace Challange
 {
-    class Program
+    public class EvenOdd 
     {
+        public static bool IsEven(int S)
+            {
+                if(S%2 == 0)
+                {
+                return true;
+                }
+                else
+                {
+                return false;
+                }
+            }
+
+        public static bool IsOdd(int S)
+        {
+            if(S%2 == 1)
+            {
+                return true;
+                }
+            else{
+                return false;
+                }
+        }
+
         static void Main(string[] args)
         {
             // Create new method with ability to detect odd or even number.
             // Example:
             // IsOdd(4) // false
             // IsEven(8) // true
+            string input = Console.ReadLine();
+            int S = Convert.ToInt32(input);
+            bool hasil = IsEven(S);
+            bool hasil2 = IsOdd(S); 
 
-            int IsEven(int S)
-            {
-                if(S%2 == 0){
-                Console.WriteLine("True");
-                return 0;
-                }
-                else{
-                    Console.WriteLine("False");
-                return 0;
-                }
-            }
-            
-            int IsOdd(int S)
-            {
-                if(S%2 == 1){
-                    Console.WriteLine("True");
-                return 0;
-                }
-                else{
-                    Console.WriteLine("False");
-                return 0;
-                }
-                
-            }
-
-            Console.WriteLine("IsOdd(4)",IsOdd(4));
-            Console.WriteLine("IsEven(8)",IsEven(8));
+            Console.WriteLine("IsOdd(4) {0}",hasil);
+            Console.WriteLine("IsEven(8) {0}",hasil2);
         }
     }
 }

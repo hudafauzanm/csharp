@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace CountWords
+namespace Challange
 {
-    class Program
+    public class CountWord
     {
         static void Main(string[] args)
         {
@@ -15,7 +15,7 @@ namespace CountWords
             Console.WriteLine(CountWords("Lorem ipsum dolor sit amet"));
         }
 
-        static int CountWords(string value)
+        public static int CountWords(string value)
         {
             // Make this method to be able counting words
             int a = 0;

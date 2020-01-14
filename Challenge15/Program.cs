@@ -1,20 +1,24 @@
 ﻿using System;
 
-namespace MirrorString
+namespace Challange
 {
-    class Program
+    public class MirrorString
     {
         static void Main(string[] args)
         {
             Mirror("--vv"); // Output: --vvvv--
+            string input = Console.ReadLine();
+            string hasil = Mirror(input);
             Console.WriteLine("--vv{0}",Mirror("--vv"));
         }
 
-        static string Mirror(string text)
+        public static string Mirror(string input)
         {
-            char[] arr = text.ToCharArray();
-            Array.Reverse(arr);
-            return new string(arr); 
+            int ln = input.Length;
+            for(int i=0; i<ln; i++)
+                input += input[ln-i-1];
+
+            return input;
         }
     }
 }
